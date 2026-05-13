@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    height: 100vh;
+    background: linear-gradient(135deg, #ff1c1c, #b30000);
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTAINER */
+.container{
+    width: 350px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+
+    text-align: center;
+}
+
+/* TITULO */
+.container h1{
+    margin-bottom: 20px;
+    color: #cc0000;
+}
+
+/* INPUT E BOTAO */
+.search-box{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-box input{
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-box button{
+    padding: 12px 18px;
+    border: none;
+    background-color: #cc0000;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box button:hover{
+    background-color: #990000;
+}
+
+/* CARD */
+.card{
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* IMAGEM */
+.card img{
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* NOME */
+.card h2{
+    margin-bottom: 15px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+/* INFOS */
+.info{
+    text-align: left;
+}
+
+.info p{
+    margin: 10px 0;
+    font-size: 17px;
+    color: #444;
+}
