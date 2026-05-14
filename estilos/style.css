@@ -7,23 +7,38 @@
 /* BODY */
 body{
     height: 100vh;
-    background: linear-gradient(135deg, #ff1c1c, #b30000);
     font-family: Arial, Helvetica, sans-serif;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    background:
+    url("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png");
+    background-size: 120px;
+    background-repeat: repeat;
+    animation: moverFundo 15s linear infinite;
+}
+
+/* ANIMAÇÃO DO FUNDO */
+@keyframes moverFundo{
+    from{
+        background-position: 0 0;
+    }
+
+    to{
+        background-position: 300px 300px;
+    }
 }
 
 /* CONTAINER */
 .container{
     width: 350px;
-    background-color: white;
+    background-color: #990000;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
-
     text-align: center;
+    box-shadow: 5px 5px 12px #99000070, -5px -5px 12px #99000070;
 }
 
 /* TITULO */
@@ -59,12 +74,12 @@ body{
 }
 
 .search-box button:hover{
-    background-color: #990000;
+    background-color: #6d0000;
 }
 
 /* CARD */
 .card{
-    background-color: #f5f5f5;
+    background-color: #C03028;
     padding: 20px;
     border-radius: 15px;
 }
@@ -80,7 +95,7 @@ body{
 /* NOME */
 .card h2{
     margin-bottom: 15px;
-    color: #333;
+    color: white;
     text-transform: capitalize;
 }
 
@@ -92,5 +107,89 @@ body{
 .info p{
     margin: 10px 0;
     font-size: 17px;
-    color: #444;
+    color: white;
+}
+
+/* TAG DO TIPO */
+.tipo-badge{
+    display: inline-block;
+    padding: 3px 6px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    border: 2px solid #ffffff66;
+}
+
+/* CORES DOS TIPOS */
+.normal{
+    background-color: #A8A878;
+}
+
+.fire{
+    background-color: #F08030;
+}
+
+.water{
+    background-color: #6890F0;
+}
+
+.electric{
+    background-color: #F8D030;
+}
+
+.grass{
+    background-color: #78C850;
+}
+
+.ice{
+    background-color: #98D8D8;
+}
+
+.fighting{
+    background-color: #C03028;
+}
+
+.poison{
+    background-color: #A040A0;
+}
+
+.ground{
+    background-color: #E0C068;
+}
+
+.flying{
+    background-color: #A890F0;
+}
+
+.psychic{
+    background-color: #F85888;
+}
+
+.bug{
+    background-color: #6B8E23;
+}
+
+.rock{
+    background-color: #B8A038;
+}
+
+.ghost{
+    background-color: #705898;
+}
+
+.dark{
+    background-color: #705848;
+}
+
+.dragon{
+    background-color: #7038F8;
+}
+
+.steel{
+    background-color: #B8B8D0;
+}
+
+.fairy{
+    background-color: #EE99AC;
 }
