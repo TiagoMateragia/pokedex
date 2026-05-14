@@ -195,7 +195,7 @@ body{
 }
 
 /* RESPONSIVIDADE */
-@media (max-width: 500px){
+@media (max-width: 600px){
 
     body{
         padding: 20px;
